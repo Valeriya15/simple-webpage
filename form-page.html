@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form-page</title>
+</head>
+<body>
+    <nav><a href="Form.html">Home Page</a></nav>
+        <h1>Для початку введіть свої дані</h1>
+    
+        <label
+        >Ім'я:
+        <input type="text" placeholder="Ваше ім'я" name="ім'я" />
+      </label>
+      <br />
+      <label for="email-input">Email:</label>
+      <input type="email" name="user-email" id="email-input" /> <br />
+      <label>Стать:</label> <br />
+      <label> <input type="radio" name="gender" value="male" />Чоловіча</label>
+      <label> <input type="radio" name="gender" value="female" />Жіноча</label>
+      <label> <input type="radio" name="gender" value="other" />Інша</label>
+
+      <br />
+      
+    
+        <header>
+            <h3>Опитування</h3>
+        </header>
+        
+    <form action="handler.php">
+            <p>В якій із наведених соцмереж ви проводите більше часу?</p> 
+            
+        <p><label><input type="checkbox" name="a" value="instagram" id="a-input">instagram</label></p>
+           <p><label><input type="checkbox" name="b" value="facebook" id="b-input">facebook</label></p>
+                <p><label><input type="checkbox" name="c" value="twitter" id="c-input">twitter</label></p>
+                    <p><label><input type="checkbox" name="d" value="youtube" id="d-input">youtube</label></p>
+            
+        </form>
+        <form action="handler.php">
+                <p>Чи є ви активним користувачем соц мереж</p>
+                 <label for="j-input">Так</label>
+            <input type="checkbox" name="j" value="Так" id="j-input">
+            <br>
+                <label for="l-input">Ні</label>
+            <input type="checkbox" name="l" value="Ні" id="l-input">
+        
+            
+            </form>
+        
+        <form method="POST" action="https://formspree.io/valeriyanester@gmail.com">
+            <p>Скільки часу на день ви витрачаєте на соцмережі?</p> 
+        <p><label><input type="checkbox" name="c" value="До 1 год">До 1 год</label></p>
+        <p><label><input type="checkbox" name="d" value="Більше 2 год">Більше 2 год</label></p>
+        <p><label><input type="checkbox" name="b" value="Близько 4 год">Близько 4 год</label></p>
+    <input type="submit">
+    </form>
+</body>
+</html>
